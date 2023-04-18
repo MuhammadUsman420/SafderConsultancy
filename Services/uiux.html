@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UI/UX</title>
 
     <!-- Stlylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,6 +18,8 @@
 
     <!-- Skin Color -->
     <link rel="stylesheet" href="../css/colors/green.css" id="color-skins" />
+   <link rel="icon" type="image/x-icon" href="../img\assets\Stepway Logo Full (1).jpg">
+
 </head>
 
 <body>
@@ -29,7 +31,8 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle navbar-toggle-responsive" data-toggle="collapse" data-target="#main-nav">
+                    <button type="button" class="navbar-toggle navbar-toggle-responsive" data-toggle="collapse"
+                        data-target="#main-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -44,7 +47,7 @@
                    Stepway
                 </span>  -->
                         <!-- <a href="index.html"> -->
-                        <img src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
+                        <img onclick="goToHome()" src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
                             class="logo-big responsive" style="margin-top: -52px; ">
                         <!-- </a> -->
                         <!-- <img src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
@@ -55,7 +58,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="nav navbar-nav  navbar-right" style="margin-top: 0 !important;">
-                        <li>
+                        <li class="to-section">
                             <a href="../index.html" class="to-top">
                                 Home
                             </a>
@@ -70,11 +73,11 @@
                                 Team
                             </a>
                         </li>
-                        <li class="to-section">
+                        <!-- <li class="to-section">
                             <a href="../index.html">
                                 Portfolio
                             </a>
-                        </li>
+                        </li> -->
                         <li class="to-section">
                             <a href="../index.html">
                                 Contact
@@ -85,27 +88,39 @@
                                 Services <i class="fa fa-arrow"></i>
                             </a>
                             <div class="dropdown-content">
-                                <ul style="padding: unset;">
-                                    <li>
-                                       <a href="../Services/training.html">Training</a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/devops.html">Devops </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/webdevelopment.html">Web Development </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/mobiledevelopment.html">Mob Develoment</a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/uiux.html">UIUX </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/concultancy.html">Concultancy </a> 
-                                    </li>
-                                    
-                                 </ul>
+                                <ul style="    padding: 20px 15px;">
+                                    <a href="../Services/training.html">
+                                        <li>
+                                            Training
+                                        </li>
+                                    </a>
+                                    <a href="../Services/devops.html">
+                                        <li>
+                                            Devops
+                                        </li>
+                                    </a>
+                                    <a href="../Services/webdevelopment.html">
+                                        <li>
+                                            Web Development
+                                        </li>
+                                    </a>
+                                    <a href="../Services/mobiledevelopment.html">
+                                        <li>
+                                            Mob Develoment
+                                        </li>
+                                    </a>
+                                    <a href="../Services/uiux.html">
+                                        <li>
+                                            UI/UX
+                                        </li>
+                                    </a>
+                                    <a href="../Services/concultancy.html">
+                                        <li>
+                                            Concultancy
+                                        </li>
+                                    </a>
+
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -123,16 +138,33 @@
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-md-6" style="height: 80vh !important;">
+                <div class="col-md-6 responsive-height" style="height: 80vh !important;">
                     <div class="training_content">
                         <h2>
-                            UIUX
+                            UI/UX
                         </h2>
-                        <p>We have a training programs , which include webdevelopment , we also give the training of mobile development with a complete full stack senerio , training courses available are java , spring , spring boot, my sql , Angular , ReactJS , VueJS </p>
+                        <p> <b> A Java UI/UX consultancy for your web project would involve engaging the services of a
+                                team of experienced Java developers with a focus on designing and developing a
+                                user-friendly, visually appealing user interface (UI) and user experience (UX) for your
+                                web application or website. </b> </p>
+                        <p> <b> Java is a versatile programming language that can be used to create highly interactive
+                                and responsive user interfaces for web applications. A Java UI/UX consultancy can help
+                                you design and develop a UI that is easy to navigate, visually appealing, and optimized
+                                for usability. They can also provide recommendations for design patterns, frameworks,
+                                and tools to use for your specific project needs. </b> </p>
+                        <p> <b> The consultancy team may also assist you in prototyping and testing your UI/UX design to
+                                ensure that it meets your users' needs and expectations. They can help you optimize your
+                                UI/UX design for various devices and screen sizes to ensure that your application is
+                                accessible and easy to use for all users. </b></p>
+                        <p> <b> Overall, a Java UI/UX consultancy can help you create a web application or website that
+                                is not only functional but also visually appealing, easy to navigate, and optimized for
+                                a great user experience. Their expertise in Java development and UI/UX design can help
+                                you differentiate your application from competitors and improve user engagement and
+                                satisfaction. </b> </p>
                     </div>
                 </div>
-                <div class="col-md-6" style="height: 80vh !important;padding: 0 !important;">
-                <img src="../img/assets/uiux.avif" width="100%" height="100%" alt="">
+                <div class="col-md-6 responsive-col" style="height: 80vh !important;padding: 0 !important;">
+                    <img src="../img/assets/uiux.avif"class="responsive-image"  width="100%" height="100%" alt="">
                 </div>
             </div>
         </div>
@@ -149,9 +181,9 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h3 class="section-title wow fadeInUp">Stepway</h3>
-                        <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
+                        <!-- <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
                             <a href="http://templatestock.co" target="_blank">Template Stock</a>
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -184,6 +216,7 @@
     <script type="text/javascript" src="../js/scripts.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/get-gmail/gmail.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

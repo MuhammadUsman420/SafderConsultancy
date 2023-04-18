@@ -1,13 +1,12 @@
 <?php
 
+  require  __DIR__.'/includes/Exception.php';
+  require  __DIR__.'/includes/PHPMailer.php';
+  require  __DIR__.'/includes/SMTP.php';
 
    use PHPMailer\PHPMailer\PHPMailer;
    use PHPMailer\PHPMailer\SMTP;
    use PHPMailer\PHPMailer\Exception;
-
-   require 'includes\Exception.php';
-   require 'includes\PHPMailer.php';
-   require 'includes\SMTP.php';
 
 
    $mail = new PHPMailer(true);
@@ -27,17 +26,17 @@
 
       //$mail->SMTPDebug = 2;                                      // Enable verbose debug output
       $mail->isSMTP();                                            // Send using SMTP
-      $mail->Host       = 'shared.vvebhost.com';                    // Set the SMTP server to send through
+      $mail->Host       = 'mail.stepwaysoftwares.com';                    // shared.vvebhost.com Set the SMTP server to send through
       $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-      $mail->Username   = 'info@icetd.it';                     // SMTP username
-      $mail->Password   = '}DD[bQ}!(@,o';                               // SMTP password
-      $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+      $mail->Username   = 'info@stepwaysoftwares.com';                     //info@icetd.it SMTP username
+      $mail->Password   = 'a_VwJ)BRqClA';                               // }DD[bQ}!(@,o SMTP password
+      //$mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
       $mail->Port       = 587;                                    // TCP port to connect to
       $mail->Subject    = "test email using php mailer";
 
       //Recipients
       // info@icetd.it
-      $mail->setFrom($Email);
+      $mail->setFrom('info@stepwaysoftwares.com');
       // $mail->Body    = "<h3>
       // Title : $title <br> Name : $name <br> Surname: $surname <br> Country : $country <br> Email: $Email <br> Phone: $phone <br>
       // Org: $org <br> Category: $category  <br> Adress: $address
@@ -50,7 +49,8 @@
 
       //$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 
-      $mail->addAddress('m32usman12@gmail.com');     // Add a recipient
+      $mail->addAddress('info@stepwaysoftwares.com');     // Add a recipient
+      $mail->addAddress($Email);     // Add a recipient
       //$mail->addAddress('ellen@example.com');               // Name is optional
       //$mail->addReplyTo('info@example.com', 'Information');
       //$mail->addCC('cc@example.com');

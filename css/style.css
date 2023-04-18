@@ -45,8 +45,8 @@ Table of Contents:
 @import "cubeportfolio.min.css";
 
 /*----- Fonts -----*/
-@import url(http://fonts.googleapis.com/css?family=Exo:400,700,800,900);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Exo:400,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
 
@@ -1037,7 +1037,7 @@ nav {
 }
 
 .navbar-alt .navbar-nav>li>.dropdown-content ul li {
-    padding: 5px 10px;
+    padding: 5px 10px 3px 10px;
     height: auto;
     list-style-type: none;
 }
@@ -1052,10 +1052,10 @@ nav {
     position: absolute;
     right: -65px;
     top: 40px;
-    background-color: #f9f9f9;
+    background-color: black;
     width: 250px;
     display: none;
-    z-index: 3;
+    z-index: 1;
 
 
 }
@@ -1245,7 +1245,7 @@ nav {
     }
 
     .navbar-default .navbar-toggle {
-        margin-top: 44px;
+        margin-top: 50px;
     }
 
     .navbar-small .navbar-toggle {
@@ -4574,8 +4574,216 @@ textarea {
         margin-top: -36px !important;
     }
 
+    .responsive-height {
+        height: 0 !important;
+    }
+
     .navbar-toggle-responsive {
         margin-bottom: 27px !important;
         margin-top: 28px !important;
     }
+
+    .responsive-col {
+        margin-top: 205% !important;
+        margin-bottom: -111px;
+    }
+
+    #footer {
+        margin-top: 0 !important;
+    }
+
+    .responsive-image {
+        height: 75% !important;
+    }
+    .training_content {
+        padding: 20px 0 0 10px;
+    }
+}
+
+.read-more-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.read-more-btn button {
+    padding: 11px 28px;
+    color: black;
+    border: transparent;
+    background-color: #d1c406;
+    font-size: 27px;
+    border-radius: 3px;
+    font-weight: 900;
+}
+
+.read-more-btn a button {
+    color: white !important;
+}
+
+.read-more-btn button:hover {
+    background-color: #c9bc08;
+    color: black;
+}
+
+@media (min-width:320px) and (max-width: 500px) {
+    .read-more-btn button {
+        padding: 9px 15px;
+        font-size: 15px;
+    }
+
+    .parent-flex .child-flex-one,
+    .parent-flex .child-flex-two {
+        display: flex;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .parent-flex .child-flex-one .training ,
+    .parent-flex .child-flex-one .webdevelopment ,
+    .parent-flex .child-flex-one .uiux,
+    .parent-flex .child-flex-two .devops,
+    .parent-flex .child-flex-two .mobdevelopment,
+    .parent-flex .child-flex-two .consultancy {
+        width: 100%  !important;
+        margin-bottom: 70%;
+    }
+
+    footer {
+        margin-top: 912px;
+    }
+
+    .navbar-alt .navbar-nav>li>.dropdown-content {
+        position: fixed !important;
+        top: 34% !important;
+    }
+
+}
+
+.parent-flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parent-flex .child-flex-one {
+    display: flex;
+    /* border: 1px solid black; */
+    height: 30vh;
+    width: 86%;
+    margin-bottom: 9px;
+}
+
+.parent-flex .child-flex-two {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 86%;
+    height: 40vh;
+    margin-bottom: 9px;
+}
+
+.parent-flex .child-flex-one>div,
+.parent-flex .child-flex-two>div {
+    width: 34%;
+    margin-right: 4px;
+    margin-top: 20px;
+    /* border: 1px solid grey; */
+}
+
+.parent-flex .child-flex-one .training,
+.parent-flex .child-flex-one .webdevelopment,
+.parent-flex .child-flex-one .uiux {
+    display: flex;
+}
+
+.parent-flex .child-flex-one .training .service-icon,
+.parent-flex .child-flex-one .webdevelopment .service-icon,
+.parent-flex .child-flex-one .uiux .service-icon {
+    width: 20%;
+    padding: 10px 14px;
+}
+
+.parent-flex .child-flex-one .training .service-icon i,
+.parent-flex .child-flex-one .webdevelopment .service-icon i,
+.parent-flex .child-flex-one .uiux .service-icon i {
+    color: #d1c406;
+    font-size: 30px;
+}
+
+.parent-flex .child-flex-one .training .service-icon .training-content,
+.parent-flex .child-flex-one .webdevelopment .service-icon .training-content,
+.parent-flex .child-flex-one .uiux .service-icon .training-content {
+    width: 80%;
+}
+
+.parent-flex .child-flex-one .training .training-content > a >button,
+.parent-flex .child-flex-one .webdevelopment .training-content > a >button,
+.parent-flex .child-flex-one .uiux .training-content > a >button {
+    padding: 10px 20px;
+    background-color: #d1c406;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.parent-flex .child-flex-one .training .training-content>button:hover,
+.parent-flex .child-flex-one .webdevelopment .training-content>button:hover,
+.parent-flex .child-flex-one .uiux .training-content>button:hover {
+    background-color: #b8ad19;
+
+}
+
+.parent-flex .child-flex-one .training .training-content> a button,
+.parent-flex .child-flex-one .webdevelopment .training-content> a button,
+.parent-flex .child-flex-one .uiux .training-content> a button {
+    color: white !important;
+    font-weight: 600;
+}
+
+.parent-flex .child-flex-two .devops,
+.parent-flex .child-flex-two .consultancy,
+.parent-flex .child-flex-two .mobdevelopment {
+    display: flex;
+}
+
+.parent-flex .child-flex-two .devops .service-icon,
+.parent-flex .child-flex-two .consultancy .service-icon,
+.parent-flex .child-flex-two .mobdevelopment .service-icon {
+    width: 20%;
+    padding: 10px 14px;
+}
+
+.parent-flex .child-flex-two .devops .service-icon i,
+.parent-flex .child-flex-two .consultancy .service-icon i,
+.parent-flex .child-flex-two .mobdevelopment .service-icon i {
+    color: #d1c406;
+    font-size: 30px;
+}
+
+.parent-flex .child-flex-two .devops .service-icon .training-content,
+.parent-flex .child-flex-two .consultancy .service-icon .training-content,
+.parent-flex .child-flex-two .mobdevelopment .service-icon .training-content {
+    width: 80%;
+}
+
+.parent-flex .child-flex-two .devops .training-content> a > button,
+.parent-flex .child-flex-two .consultancy .training-content> a > button,
+.parent-flex .child-flex-two .mobdevelopment .training-content> a > button {
+    padding: 10px 20px;
+    background-color: #d1c406;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.parent-flex .child-flex-two .devops .training-content>button:hover,
+.parent-flex .child-flex-two .consultancy .training-content>button:hover,
+.parent-flex .child-flex-two .mobdevelopment .training-content>button:hover {
+    background-color: #b8ad19;
+}
+
+.parent-flex .child-flex-two .devops .training-content> a button,
+.parent-flex .child-flex-two .consultancy .training-content> a button,
+.parent-flex .child-flex-two .mobdevelopment .training-content> a button {
+    color: white !important;
+    font-weight: 600;
 }

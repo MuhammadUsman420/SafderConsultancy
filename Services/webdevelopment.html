@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Development</title>
 
     <!-- Stlylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,6 +18,8 @@
 
     <!-- Skin Color -->
     <link rel="stylesheet" href="../css/colors/green.css" id="color-skins" />
+   <link rel="icon" type="image/x-icon" href="../img\assets\Stepway Logo Full (1).jpg">
+
 </head>
 
 <body>
@@ -29,7 +31,8 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle navbar-toggle-responsive" data-toggle="collapse" data-target="#main-nav">
+                    <button type="button" class="navbar-toggle navbar-toggle-responsive" data-toggle="collapse"
+                        data-target="#main-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -44,7 +47,7 @@
                    Stepway
                 </span>  -->
                         <!-- <a href="index.html"> -->
-                        <img src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
+                        <img onclick="goToHome()" src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
                             class="logo-big responsive" style="margin-top: -52px; ">
                         <!-- </a> -->
                         <!-- <img src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
@@ -55,7 +58,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="nav navbar-nav  navbar-right" style="margin-top: 0 !important;">
-                        <li>
+                        <li class="to-section">
                             <a href="../index.html" class="to-top">
                                 Home
                             </a>
@@ -70,11 +73,11 @@
                                 Team
                             </a>
                         </li>
-                        <li class="to-section">
+                        <!-- <li class="to-section">
                             <a href="../index.html">
                                 Portfolio
                             </a>
-                        </li>
+                        </li> -->
                         <li class="to-section">
                             <a href="../index.html">
                                 Contact
@@ -85,27 +88,39 @@
                                 Services <i class="fa fa-arrow"></i>
                             </a>
                             <div class="dropdown-content">
-                                <ul style="padding: unset;">
-                                    <li>
-                                       <a href="../Services/training.html">Training</a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/devops.html">Devops </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/webdevelopment.html">Web Development </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/mobiledevelopment.html">Mob Develoment</a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/uiux.html">UIUX </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/concultancy.html">Concultancy </a> 
-                                    </li>
-                                    
-                                 </ul>
+                                <ul style="padding: 20px 15px;">
+                                    <a href="../Services/training.html">
+                                        <li>
+                                            Training
+                                        </li>
+                                    </a>
+                                    <a href="../Services/devops.html">
+                                        <li>
+                                            Devops
+                                        </li>
+                                    </a>
+                                    <a href="../Services/webdevelopment.html">
+                                        <li>
+                                            Web Development
+                                        </li>
+                                    </a>
+                                    <a href="../Services/mobiledevelopment.html">
+                                        <li>
+                                            Mob Develoment
+                                        </li>
+                                    </a>
+                                    <a href="../Services/uiux.html">
+                                        <li>
+                                            UI/UX
+                                        </li>
+                                    </a>
+                                    <a href="../Services/concultancy.html">
+                                        <li>
+                                            Concultancy
+                                        </li>
+                                    </a>
+
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -125,14 +140,32 @@
             <div class="row">
                 <div class="col-md-6" style="height: 80vh !important;">
                     <div class="training_content">
-                        <h2>
-                            Web Development
-                        </h2>
-                        <p>We have a training programs , which include webdevelopment , we also give the training of mobile development with a complete full stack senerio , training courses available are java , spring , spring boot, my sql , Angular , ReactJS , VueJS </p>
+                        <h3>
+                            Our web development services include:
+                        </h3>
+                        <p> <b> Website design: We help businesses create visually appealing and user-friendly websites
+                                that are optimized for different devices and platforms. I use the latest design tools
+                                and techniques to ensure that the website is modern, engaging, and easy to navigate.
+                            </b> </p>
+                        <p> <b> Front-end development: I specialize in front-end development using HTML, CSS, and
+                                JavaScript. I create responsive and interactive user interfaces that provide a great
+                                user experience across different devices. </b> </p>
+                        <p> <b> Back-end development: I offer back-end development services using popular programming
+                                languages such as PHP, Python, and Node.js. I create robust and scalable web
+                                applications that can handle high traffic and complex functionality. </b> </p>
+                        <p> <b> Content management systems (CMS): I specialize in creating websites using popular CMS
+                                platforms such as WordPress, Drupal, and Joomla. This allows businesses to easily manage
+                                their website content and update it regularly. </b> </p>
+                        <p> <b> E-commerce development: I offer e-commerce development services using platforms such as
+                                WooCommerce, Shopify, and Magento. This allows businesses to create an online store that
+                                is easy to manage, secure, and scalable. </b> </p>
+                        <p> <b> Through my web development services, I help businesses create websites that are visually
+                                appealing, user-friendly, and efficient. Contact me today to learn more about how my web
+                                development services can benefit your business. </b> </p>
                     </div>
                 </div>
-                <div class="col-md-6" style="height: 80vh !important;padding: 0 !important;">
-                <img src="../img/assets/webdevelopment.png" width="100%" height="100%" alt="">
+                <div class="col-md-6 responsive-col" style="height: 80vh !important;padding: 0 !important; margin-top: 20px;">
+                    <img src="../img/assets/webdevelopment.png" class="responsive-image"  width="100%" height="100%" alt="">
                 </div>
             </div>
         </div>
@@ -149,9 +182,9 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h3 class="section-title wow fadeInUp">Stepway</h3>
-                        <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
+                        <!-- <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
                             <a href="http://templatestock.co" target="_blank">Template Stock</a>
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -184,6 +217,7 @@
     <script type="text/javascript" src="../js/scripts.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/get-gmail/gmail.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consultancy</title>
 
     <!-- Stlylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -18,6 +18,8 @@
 
     <!-- Skin Color -->
     <link rel="stylesheet" href="../css/colors/green.css" id="color-skins" />
+   <link rel="icon" type="image/x-icon" href="../img\assets\Stepway Logo Full (1).jpg">
+
 </head>
 
 <body>
@@ -44,7 +46,7 @@
                    Stepway
                 </span>  -->
                         <!-- <a href="index.html"> -->
-                        <img src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
+                        <img onclick="goToHome()" src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
                             class="logo-big responsive" style="margin-top: -52px; ">
                         <!-- </a> -->
                         <!-- <img src="../img\assets\Stepway_Logo_Full__1_-removebg-preview.png" alt="Visual" width="5%"
@@ -55,7 +57,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="nav navbar-nav  navbar-right" style="margin-top: 0 !important;">
-                        <li>
+                        <li class="to-section">
                             <a href="../index.html" class="to-top">
                                 Home
                             </a>
@@ -70,11 +72,11 @@
                                 Team
                             </a>
                         </li>
-                        <li class="to-section">
+                        <!-- <li class="to-section">
                             <a href="../index.html">
                                 Portfolio
                             </a>
-                        </li>
+                        </li> -->
                         <li class="to-section">
                             <a href="../index.html">
                                 Contact
@@ -85,27 +87,38 @@
                                 Services <i class="fa fa-arrow"></i>
                             </a>
                             <div class="dropdown-content">
-                                <ul style="padding: unset;">
-                                    <li>
-                                       <a href="../Services/training.html">Training</a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/devops.html">Devops </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/webdevelopment.html">Web Development </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/mobiledevelopment.html">Mob Develoment</a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/uiux.html">UIUX </a>
-                                    </li>
-                                    <li>
-                                       <a href="../Services/concultancy.html">Concultancy </a> 
-                                    </li>
-                                    
-                                 </ul>
+                                <ul style="padding: 20px 15px;">
+                                    <a href="../Services/training.html">
+                                        <li>
+                                            Training
+                                        </li>
+                                    </a>
+                                    <a href="../Services/devops.html">
+                                        <li>
+                                            DevOps
+                                        </li>
+                                    </a>
+                                    <a href="../Services/webdevelopment.html">
+                                        <li>
+                                            Web Development
+                                        </li>
+                                    </a>
+                                    <a href="../Services/mobiledevelopment.html">
+                                        <li>
+                                            Mob Develoment
+                                        </li>
+                                    </a>
+                                    <a href="../Services/uiux.html">
+                                        <li>
+                                            UI/UX
+                                        </li>
+                                    </a>
+                                    <a href="../Services/concultancy.html">
+                                        <li>
+                                            Concultancy
+                                        </li>
+                                    </a>
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -119,20 +132,23 @@
 
     <main>
 
-
+<!-- usman -->
         <div class="container-fluid">
 
             <div class="row">
                 <div class="col-md-6" style="height: 80vh !important;">
                     <div class="training_content">
-                        <h2>
-                            Consultancy
-                        </h2>
-                        <p>We have a training programs , which include webdevelopment , we also give the training of mobile development with a complete full stack senerio , training courses available are java , spring , spring boot, my sql , Angular , ReactJS , VueJS </p>
+                        <h3 style="font-size: 40px;">
+                            Consultancy (Java)
+                        </h3>
+                        <p> <b>  We provide a wide range of services, including application development, maintenance, testing, and performance optimization. They can work with you to identify the best Java frameworks and tools to use for your project, such as Spring, Hibernate, and Struts. Additionally, Java consultants can help you integrate your web application with other systems, such as databases, web services, and third-party APIs. </b> </p>
+                        <p> <b> Our Java consultancy team can also offer guidance on security and compliance issues, ensuring that your web application meets industry standards and regulations. </b> </p>
+                        <p> <b> The consultancy team may also assist you in troubleshooting any issues that arise in your Java code or provide recommendations for updates or upgrades to your technology stack. They can also provide training and support for your in-house development team to help them better understand and work with Java. </b> </p>
+                        <p> <b>Overall, a Java consultancy can help ensure the success of your web project by providing expert guidance and support throughout the development process and beyond.</b> </p>
                     </div>
                 </div>
-                <div class="col-md-6" style="height: 80vh !important;padding: 0 !important;">
-                <img src="../img/assets/consultant.jpg" width="100%" height="100%" alt="">
+                <div class="col-md-6 responsive-col" style="height: 80vh !important;padding: 0 !important;">
+                <img src="../img/assets/consultant.jpg" class="responsive-image" width="100%" height="100%" alt="">
                 </div>
             </div>
         </div>
@@ -149,9 +165,9 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h3 class="section-title wow fadeInUp">Stepway</h3>
-                        <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
+                        <!-- <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
                             <a href="http://templatestock.co" target="_blank">Template Stock</a>
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -184,6 +200,7 @@
     <script type="text/javascript" src="../js/scripts.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/get-gmail/gmail.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

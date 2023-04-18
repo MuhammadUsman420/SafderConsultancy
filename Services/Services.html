@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devops</title>
+    <title>Mobile Development</title>
 
     <!-- Stlylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/no-ui-slider/jquery.nouislider.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Skin Color -->
     <link rel="stylesheet" href="../css/colors/green.css" id="color-skins" />
@@ -38,7 +42,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand to-top" href="../index.html">
+                    <a class="navbar-brand to-top" rel="home" href="../index.html">
                         <!-- <span class="logo-big">
                    Stepway
                 </span> 
@@ -58,28 +62,28 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="nav navbar-nav  navbar-right" style="margin-top: 0 !important;">
-                        <li>
-                            <a class="to-top">
+                        <li class="to-section">
+                            <a href="../index.html" class="to-top">
                                 Home
                             </a>
                         </li>
                         <li class="to-section">
-                            <a href="#about">
+                            <a href="../index.html" class="to-top">
                                 About Us
                             </a>
                         </li>
                         <li class="to-section">
-                            <a href="#team">
+                            <a href="../index.html">
                                 Team
                             </a>
                         </li>
                         <!-- <li class="to-section">
-                            <a href="#portfolio">
+                            <a href="../index.html">
                                 Portfolio
                             </a>
                         </li> -->
                         <li class="to-section">
-                            <a href="#contact">
+                            <a href="../index.html">
                                 Contact
                             </a>
                         </li>
@@ -88,37 +92,26 @@
                                 Services <i class="fa fa-arrow"></i>
                             </a>
                             <div class="dropdown-content">
-                                <ul style="padding: 20px 15px;">
-                                    <a href="../Services/training.html">
-                                        <li>
-                                            Training
-                                        </li>
-                                    </a>
-                                    <a href="../Services/devops.html">
-                                        <li>
-                                            DevOps
-                                        </li>
-                                    </a>
-                                    <a href="../Services/webdevelopment.html">
-                                        <li>
-                                            Web Development
-                                        </li>
-                                    </a>
-                                    <a href="../Services/mobiledevelopment.html">
-                                        <li>
-                                            Mob Develoment
-                                        </li>
-                                    </a>
-                                    <a href="../Services/uiux.html">
-                                        <li>
-                                            UI/UX
-                                        </li>
-                                    </a>
-                                    <a href="../Services/concultancy.html">
-                                        <li>
-                                            Concultancy
-                                        </li>
-                                    </a>
+                                <ul style="    padding: 20px 15px;">
+                                    <li>
+                                        <a href="../Services/training.html">Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Services/devops.html">Devops </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Services/webdevelopment.html">Web Development </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Services/mobiledevelopment.html">Mob Develoment</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Services/uiux.html">UI/UX </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Services/concultancy.html">Concultancy </a>
+                                    </li>
+
                                 </ul>
                             </div>
                         </li>
@@ -132,50 +125,98 @@
     <!-- End Header -->
 
     <main>
+        <h2 style="text-align: center;">Services</h2>
+        <hr>
+        <div class="parent-flex">
 
+            <div class="child-flex-one">
+                <div class="training">
 
-        <div class="container-fluid">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="training-content">
+                        <h4>Our Training Services Includes </h4>
+                        <p>We provide comprehensive full-stack development course designed to equip individuals with the
+                            skills and knowledge needed to become proficient full-stack developers.</p>
+                            <a href="../Services/training.html">  <button>Read More</button></a>
+                    </div>
 
-            <div class="row">
-                <div class="col-md-6" style="height: 80vh !important;">
-                    <div class="training_content">
-                        <h3 style="font-size: 40px;">
-                            Our DevOps services include
-                        </h3>
-                        <p> <b> Infrastructure automation: we help businesses automate their infrastructure by using
-                                tools such as Ansible, Terraform, and CloudFormation. This helps to reduce manual
-                                errors, increase reliability, and speed up the deployment process. </b> </p>
-                        <p> <b> Continuous integration and continuous deployment (CI/CD): I help businesses set up and
-                                manage their CI/CD pipeline using tools such as Jenkins, GitLab, and CircleCI. This
-                                ensures that code changes are tested and deployed quickly and reliably, improving
-                                software quality and reducing the time to market. </b> </p>
-                        <p> <b> Containerization: I help businesses adopt containerization using Docker and Kubernetes.
-                                This helps to improve scalability, portability, and flexibility of their applications,
-                                making it easier to deploy and manage applications across different environments. </b>
-                        </p>
-                        <p> <b>Monitoring and logging: I help businesses set up monitoring and logging systems using
-                                tools such as Prometheus, Grafana, and ELK stack. This helps to identify and resolve
-                                issues quickly, ensuring that applications are always running smoothly. </b> </p>
-                        <p> <b> Cloud management: I help businesses manage their cloud infrastructure, including AWS,
-                                Azure, and Google Cloud Platform. This includes optimizing resource usage, improving
-                                security, and reducing costs. </b> </p>
-                        <p> <b> Through my DevOps services, I help businesses improve their software development
-                                process, reduce manual errors, increase reliability, and speed up the deployment
-                                process. Contact me today to learn more about how my DevOps services can benefit your
-                                business. </b> </p>
+                </div>
+                <div class="webdevelopment">
+
+                    <div class="service-icon">
+                        <i class="fas fa-glasses"></i>
+                    </div>
+                    <div class="training-content">
+                        <h4> Our DevOps services include: </h4>
+                        <p>Infrastructure automation: we help businesses automate their infrastructure by using tools
+                            such as Ansible, Terraform, and CloudFormation.</p>
+                            <a href="../Services/devops.html"><button> Read More</button></a>
+                    </div>
+
+                </div>
+                <div class="uiux">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="training-content">
+                        <h4> Our web development services include: </h4>
+                        <p>We help businesses create visually appealing and user-friendly websites that are optimized
+                            for different devices and platforms.</p>
+                            <a href="../Services/webdevelopment.html"> <button>Read More</button></a>
                     </div>
                 </div>
-                <div class="col-md-6 responsive-col" style="height: 80vh !important;padding: 0 !important; margin-top: 40px;">
-                    <img src="../img/assets/devops.avif" class="responsive-image" width="100%" height="100%" alt="">
+            </div>
+            <div class="child-flex-two" style="margin-top: 40px !important;">
+
+                <div class="devops" style="margin-right: 0px !important;">
+                    <div class="service-icon">
+                        <i class="fas fa-gear"></i>
+                    </div>
+                    <div class="training-content">
+                        <h4> Our mobile development services include </h4>
+                        <p>I help businesses create visually appealing and user-friendly mobile app designs that are
+                            optimized for different devices and platforms.</p>
+                            <a href="../Services/mobiledevelopment.html"> <button>Read More</button></a>
+                    </div>
+                </div>
+
+                <div class="consultancy">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="training-content">
+                        <h4> Technical Consulting </h4>
+                        <p> We provide a wide range of services, including application development, maintenance,
+                            testing, and performance optimization. They can work with you to identify the best Java
+                            frameworks and tools to use for your project</p>
+                            <a href="../Services/concultancy.html"><button> Read More</button></a>
+                    </div>
+                </div>
+
+                <div class="mobdevelopment">
+                    <div class="service-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="training-content">
+                        <h4> Our UI/UX development services includes </h4>
+                        <p> A Java UI/UX consultancy for your web project would involve engaging the services of a team
+                            of experienced Java developers with a focus on designing and developing a user-friendly UI/UX
+                            designs</p>
+                            <a href="../Services/uiux.html"><button> Read More</button></a>
+                    </div>
                 </div>
             </div>
+
         </div>
+
 
     </main>
 
 
     <!-- Start Footer 1 -->
-    <footer id="footer" style="display: flex; justify-content: center; width: 100%;">
+    <footer id="footer" style="display: block; justify-content: center; width: 100%;">
         <!-- End Footer Widgets -->
 
         <div class="footer-copyright">
@@ -211,7 +252,7 @@
     <script type="text/javascript" src="../js/plugins/cubeportfolio.min.js"></script>
     <script type="text/javascript" src="../js/plugins/owlcarousel.min.js"></script>
     <script type="text/javascript" src="../js/plugins/tweetie.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="../js/plugins/gmap3.min.js"></script>
     <script type="text/javascript" src="../js/plugins/wow.min.js"></script>
     <script type="text/javascript" src="../js/plugins/counterup.min.js"></script>
