@@ -20,8 +20,8 @@
     // $phone = $_POST['phone'];
     // $org = $_POST['org'];
     // $category = $_POST['category'];
-    $ContentSubject = ($_POST['subject']);
-    $Comments = ($_POST['comments']);
+    $Phone = ($_POST['phone']);
+    $RequestDetails = ($_POST['requestDetails']);
     // $address =(!$_POST['address']) ? ("Empty") : ($_POST['address']) ;
 
       //$mail->SMTPDebug = 2;                                      // Enable verbose debug output
@@ -43,13 +43,13 @@
       // </h3>";
 
       $mail->Body    = "<h3>
-      Name : $name <br> Email: $Email <br> Subject: $ContentSubject <br> Comments: $Comments
+      Name : $name <br> Email: $Email <br> Subject: $Phone <br> Comments: $RequestDetails
       </h3>";
 
 
       //$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 
-      $mail->addAddress('info@stepwaysoftwares.com');     // Add a recipient
+      $mail->addAddress('m32usman12@gmail.com');     // Add a recipient
       $mail->addAddress($Email);     // Add a recipient
       //$mail->addAddress('ellen@example.com');               // Name is optional
       //$mail->addReplyTo('info@example.com', 'Information');
